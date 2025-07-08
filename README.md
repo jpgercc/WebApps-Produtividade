@@ -2,6 +2,8 @@
 
 Uma aplicação web moderna e minimalista para escrever e organizar suas reflexões diárias. Desenvolvida com foco na simplicidade e experiência do usuário.
 
+![image](https://github.com/user-attachments/assets/cd7fae71-7fd1-4107-8c94-df94eb0563ae)
+
 ## ✨ Características
 
 - **Interface Limpa**: Design minimalista inspirado em revistas e editores de texto modernos
