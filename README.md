@@ -1,8 +1,6 @@
-# 📖 Diario Web
+# 📖 Diário WebApp
 
 Uma aplicação web moderna e minimalista para escrever e organizar suas reflexões diárias. Desenvolvida com foco na simplicidade e experiência do usuário.
-
-![image](https://github.com/user-attachments/assets/cd7fae71-7fd1-4107-8c94-df94eb0563ae)
 
 ## ✨ Características
 
@@ -48,7 +46,7 @@ Uma aplicação web moderna e minimalista para escrever e organizar suas reflex�
 
 4. **Acesse a aplicação**
    
-   Abra seu navegador e vá para: `http://localhost:3000`
+   Abra seu navegador e vá para: `http://localhost:8000`
 
 ## 📱 Como Usar
 
@@ -57,15 +55,23 @@ Uma aplicação web moderna e minimalista para escrever e organizar suas reflex�
 1. Clique no botão **"+ Nova Entrada"**
 2. Escreva seu título e conteúdo
 3. A entrada será salva automaticamente
+4. Use **Ctrl+S** para salvar manualmente a qualquer momento
 
 ### Navegação
 
 - **Buscar**: Use a barra de busca para encontrar entradas específicas
 - **Tema**: Clique no ícone de tema para alternar entre claro/escuro
 - **Editar**: Clique em qualquer entrada para editá-la
+- **Backup**: Use o botão de backup para baixar suas entradas
 
+### Atalhos de Teclado
+
+- `Ctrl + S` - Salvar entrada atual
+- `Ctrl + N` - Nova entrada
+- `Esc` - Sair do modo de edição
 
 ## 🛠️ Estrutura do Projeto
+
 ```
 diario/
 ├── index.html              # Interface principal da aplicação
@@ -81,6 +87,18 @@ diario/
 └── README.md               # Documentação do projeto
 ```
 
+## 🔧 Tecnologias Utilizadas
+
+### Frontend
+- **HTML5** - Estrutura semântica
+- **CSS3** - Estilização moderna com CSS Grid e Flexbox
+- **JavaScript (ES6+)** - Lógica da aplicação e interatividade
+
+### Backend
+- **Node.js** - Runtime JavaScript
+- **Express.js** - Framework web
+- **CORS** - Middleware para requisições cross-origin
+
 ### Dependências
 ```json
 {
@@ -89,9 +107,15 @@ diario/
 }
 ```
 
+## 📦 Scripts Disponíveis
+
+- `npm start` - Inicia o servidor em modo produção
+- `npm run dev` - Inicia o servidor em modo desenvolvimento (com nodemon)
+
 ## 💾 Armazenamento de Dados
 
 - **Arquivo Local**: `diary-data.json` - Todas as entradas são salvas localmente
+- **Backup Automático**: Sistema de backup integrado
 - **Formato JSON**: Dados estruturados para fácil migração
 
 ### Estrutura dos Dados
@@ -120,6 +144,15 @@ A aplicação suporta temas claro e escuro. As cores podem ser personalizadas ed
   /* ... outras variáveis */
 }
 ```
+
+### Fontes
+Por padrão, usa `Courier New` para uma experiência de escrita autêntica. Pode ser alterado no CSS.
+
+## 🔒 Privacidade e Segurança
+
+- **Dados Locais**: Todos os dados ficam no seu computador
+- **Sem Conexão Externa**: Nenhum dado é enviado para servidores externos
+- **Backup Local**: Controle total sobre seus backups
 
 ## 🐛 Solução de Problemas
 
@@ -160,6 +193,10 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 4. Push para a branch (`git push origin feature/nova-feature`)
 5. Abrir um Pull Request
 
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
 ## 📞 Suporte
 
 Se você encontrar algum problema ou tiver sugestões:
@@ -170,4 +207,6 @@ Se você encontrar algum problema ou tiver sugestões:
 
 ---
 
-*Mantenha suas reflexões organizadas e acessíveis.*
+**Desenvolvido com ❤️ para escritores e pensadores**
+
+*Mantenha suas reflexões organizadas e acessíveis com esta ferramenta simples e poderosa.*

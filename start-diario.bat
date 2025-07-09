@@ -62,11 +62,11 @@ if not exist "diary-data.json" (
 
 echo Iniciando servidor...
 echo.
-echo Acesse: http://localhost:3000
+echo Acesse: http://localhost:3001
 echo.
 
 :: Abre navegador após 3 segundos
-start /b powershell -WindowStyle Hidden -Command "Start-Sleep 3; Start-Process 'http://localhost:3000'"
+start /b powershell -WindowStyle Hidden -Command "Start-Sleep 3; Start-Process 'http://localhost:3001'"
 
 echo Servidor iniciando... (Ctrl+C para parar)
 echo.

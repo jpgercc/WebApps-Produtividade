@@ -3,7 +3,7 @@
 
 // --- API Functions for Server Communication ---
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'http://localhost:3050/api';
 
 async function loadEntriesFromServer() {
     try {

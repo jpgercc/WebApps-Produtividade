@@ -42,9 +42,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (savedTheme) {
         body.setAttribute('data-theme', savedTheme);
         themeToggle.textContent = savedTheme === 'dark' ? 'Modo Claro' : 'Modo Escuro';
+        updateFavicon(savedTheme);
     } else {
         body.setAttribute('data-theme', 'light');
         themeToggle.textContent = 'Modo Escuro';
+        updateFavicon('light');
     }
     
     // Load entries from server
@@ -60,10 +62,12 @@ themeToggle.addEventListener('click', () => {
         body.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
         themeToggle.textContent = 'Modo Escuro';
+        updateFavicon('light');
     } else {
         body.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         themeToggle.textContent = 'Modo Claro';
+        updateFavicon('dark');
     }
 });
 
@@ -112,7 +116,7 @@ function showView(viewId) {
 
 // --- Entry Management ---
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'http://localhost:3001/api';
 
 async function loadEntriesFromServer() {
     try {
@@ -372,8 +376,15 @@ saveEntryBtn.addEventListener('click', () => {
     const title = entryTitleInput.value.trim();
     const content = entryContentInput.value.trim();
 
-    if (!date || !content) {
-        alert('A data e o conteúdo da entrada são obrigatórios!');
+    if (!date) {
+        alert('A data é obrigatória!');
+        entryDateInput.focus();
+        return;
+    }
+
+    if (!content) {
+        alert('O conteúdo da entrada é obrigatório!');
+        entryContentInput.focus();
         return;
     }
 
@@ -387,7 +398,7 @@ saveEntryBtn.addEventListener('click', () => {
     } else {
         // Add new entry
         const newEntry = {
-            id: Date.now(), // Simple unique ID
+            id: Date.now() + Math.random().toString(36).substr(2, 9),
             date,
             title,
             content
@@ -441,14 +452,19 @@ addEntryBtnYears.addEventListener('click', () => openEntryModal());
 addEntryBtnMonths.addEventListener('click', () => openEntryModal());
 addEntryBtnEntries.addEventListener('click', () => openEntryModal());
 
-// Initial rendering
-updateStats();
-renderYears();
-showView('home'); // Ensure home is the initial view
-
-// --- Export/Import Functionality ---
-
-// Initial rendering
-updateStats();
-renderYears();
-showView('home'); // Ensure home is the initial view
+// Function to update favicon based on theme
+function updateFavicon(theme) {
+    const favicon = document.querySelector('link[rel="icon"]');
+    const alternateFavicon = document.querySelector('link[rel="alternate icon"]');
+    const maskIcon = document.querySelector('link[rel="mask-icon"]');
+    
+    if (theme === 'dark') {
+        if (favicon) favicon.href = 'black.svg';
+        if (alternateFavicon) alternateFavicon.href = 'black.svg';
+        if (maskIcon) maskIcon.href = 'black.svg';
+    } else {
+        if (favicon) favicon.href = 'favicon.svg';
+        if (alternateFavicon) alternateFavicon.href = 'favicon.svg';
+        if (maskIcon) maskIcon.href = 'favicon.svg';
+    }
+}
