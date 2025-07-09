@@ -461,13 +461,16 @@ function updateFavicon(theme) {
     const alternateFavicon = document.querySelector('link[rel="alternate icon"]');
     const maskIcon = document.querySelector('link[rel="mask-icon"]');
     
+    // Adiciona um timestamp para forçar o recarregamento do favicon
+    const timestamp = new Date().getTime();
+    
     if (theme === 'dark') {
-        if (favicon) favicon.href = 'black.svg';
-        if (alternateFavicon) alternateFavicon.href = 'black.svg';
-        if (maskIcon) maskIcon.href = 'black.svg';
+        if (favicon) favicon.href = `black.svg?t=${timestamp}`;
+        if (alternateFavicon) alternateFavicon.href = `black.svg?t=${timestamp}`;
+        if (maskIcon) maskIcon.href = `black.svg?t=${timestamp}`;
     } else {
-        if (favicon) favicon.href = 'favicon.svg';
-        if (alternateFavicon) alternateFavicon.href = 'favicon.svg';
-        if (maskIcon) maskIcon.href = 'favicon.svg';
+        if (favicon) favicon.href = `favicon.svg?t=${timestamp}`;
+        if (alternateFavicon) alternateFavicon.href = `favicon.svg?t=${timestamp}`;
+        if (maskIcon) maskIcon.href = `favicon.svg?t=${timestamp}`;
     }
 }
