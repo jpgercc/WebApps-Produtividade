@@ -80,11 +80,11 @@ diario/
 ├── server.js               # Servidor Express principal
 ├── server-integration.js   # Integração do servidor com frontend
 ├── diary-data.json         # Arquivo de dados (criado automaticamente)
-├── package.json            # Dependências e scripts npm
-├── package-lock.json       # Lock das dependências
-├── start-diario.bat        # Script de inicialização (Windows)
-├── /node_modules           # Dependencias do node (criado automaticamente)
-└── README.md               # Documentação do projeto
+├── package.json            # *Dependências e scripts npm
+├── package-lock.json       # *Lock das dependências
+├── start-diario.bat        # *Script de inicialização (Windows)
+├── /node_modules           # *Dependencias do node (criado automaticamente)
+└── README.md               # *Documentação do projeto
 ```
 
 ## 🔧 Tecnologias Utilizadas
