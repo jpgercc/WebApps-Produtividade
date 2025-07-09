@@ -60,6 +60,24 @@ if not exist "diary-data.json" (
     echo [] > diary-data.json
 )
 
+:: Verifica se a porta 3001 está em uso e finaliza processo se necessário
+echo Verificando porta 3001...
+netstat -ano | findstr :3001 >nul 2>&1
+if %errorlevel% == 0 (
+    echo Porta 3001 em uso. Finalizando processo anterior...
+    for /f "tokens=5" %%a in ('netstat -ano ^| findstr :3001') do (
+        echo Finalizando PID: %%a
+        taskkill /PID %%a /F >nul 2>&1
+    )
+    echo Aguardando liberacao da porta...
+    timeout /t 3 /nobreak >nul
+    echo Porta liberada!
+    echo.
+) else (
+    echo Porta 3001 disponivel!
+    echo.
+)
+
 echo Iniciando servidor...
 echo.
 echo Acesse: http://localhost:3001
