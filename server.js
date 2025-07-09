@@ -4,9 +4,9 @@ const path = require('path');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3001; // Porta alternativa para evitar conflitos
+const PORT = 3001; // Porta padrão para desenvolvimento
 
-// const PORT = 3000; // Usada geralmente para desenvolvimento (Express)
+// const PORT = 3001; // Porta alternativa para evitar conflitos
 // cons PORT = 7000; // Usada para aplicações Node.js
 // const PORT = 5000; // Usada para aplicações web
 // const PORT = 4000; // Usada para aplicações de teste

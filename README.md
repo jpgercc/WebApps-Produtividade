@@ -2,39 +2,17 @@
 
 Uma aplicação web moderna e minimalista para escrever e organizar suas reflexões diárias. Desenvolvida com foco na simplicidade e experiência do usuário.
 
-**🌐 Deploy na Vercel com banco de dados gratuito incluído!**
-
 ## ✨ Características
 
 - **Interface Limpa**: Design minimalista inspirado em revistas e editores de texto modernos
 - **Tema Escuro/Claro**: Alternância fácil entre temas para conforto visual
-- **Salvamento na Nuvem**: Dados salvos automaticamente no Vercel KV (Redis)
+- **Salvamento Automático**: Suas entradas são salvas automaticamente no arquivo local
 - **Busca Inteligente**: Pesquise por palavras-chave em todas as suas entradas
-- **Backup Online**: Sistema de backup integrado acessível de qualquer lugar
+- **Backup Local**: Sistema de backup integrado dos seus dados
 - **Responsive**: Funciona perfeitamente em desktop e dispositivos móveis
 - **Tipografia Elegante**: Fonte Courier New para uma experiência de escrita autêntica
-- **Deploy Gratuito**: Hospedagem gratuita na Vercel com banco de dados incluído
 
-## 🚀 Opções de Uso
-
-### Opção 1: Deploy na Vercel (Recomendado)
-**Completamente GRATUITO** - Acesse de qualquer lugar!
-
-Veja as instruções completas em: [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md)
-
-**Resumo rápido:**
-```bash
-# 1. Instale a CLI da Vercel
-npm install -g vercel
-
-# 2. Faça login
-vercel login
-
-# 3. Deploy o projeto
-vercel
-```
-
-### Opção 2: Execução Local
+## 🚀 Início Rápido
 
 ### Pré-requisitos
 
@@ -68,7 +46,7 @@ vercel
 
 4. **Acesse a aplicação**
    
-   Abra seu navegador e vá para: `http://localhost:8000`
+   Abra seu navegador e vá para: `http://localhost:3000`
 
 ## 📱 Como Usar
 
@@ -136,23 +114,9 @@ diario/
 ```json
 {
   "express": "^4.21.2",
-  "cors": "^2.8.5",
-  "@vercel/kv": "^1.0.1"
+  "cors": "^2.8.5"
 }
 ```
-
-## 🌐 Ambientes Suportados
-
-### Vercel (Produção)
-- **Frontend**: Hospedagem estática global
-- **Backend**: Serverless Functions
-- **Banco**: Vercel KV (Redis)
-- **URL**: https://seu-projeto.vercel.app
-
-### Local (Desenvolvimento)
-- **Frontend**: Servido pelo Express
-- **Backend**: Express.js server
-- **Banco**: arquivo JSON local
 
 ## 📦 Scripts Disponíveis
 
@@ -161,12 +125,6 @@ diario/
 
 ## 💾 Armazenamento de Dados
 
-### Vercel (Produção)
-- **Banco de Dados**: Vercel KV (Redis) - Gratuito até 30,000 comandos/mês
-- **Backup**: Disponível via API `/api/backup`
-- **Sincronização**: Automática entre dispositivos
-
-### Local (Desenvolvimento)  
 - **Arquivo Local**: `diary-data.json` - Todas as entradas são salvas localmente
 - **Backup Automático**: Sistema de backup integrado
 - **Formato JSON**: Dados estruturados para fácil migração
@@ -203,13 +161,6 @@ Por padrão, usa `Courier New` para uma experiência de escrita autêntica. Pode
 
 ## 🔒 Privacidade e Segurança
 
-### Versão Vercel
-- **Dados na Nuvem**: Armazenados no Vercel KV (criptografados)
-- **Acesso Privado**: Apenas você tem acesso aos seus dados
-- **HTTPS**: Conexão segura sempre
-- **Backup**: Disponível para download a qualquer momento
-
-### Versão Local
 - **Dados Locais**: Todos os dados ficam no seu computador
 - **Sem Conexão Externa**: Nenhum dado é enviado para servidores externos
 - **Backup Local**: Controle total sobre seus backups
