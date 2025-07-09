@@ -81,18 +81,6 @@ diario/
 └── README.md               # Documentação do projeto
 ```
 
-## 🔧 Tecnologias Utilizadas
-
-### Frontend
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização moderna com CSS Grid e Flexbox
-- **JavaScript (ES6+)** - Lógica da aplicação e interatividade
-
-### Backend
-- **Node.js** - Runtime JavaScript
-- **Express.js** - Framework web
-- **CORS** - Middleware para requisições cross-origin
-
 ### Dependências
 ```json
 {
