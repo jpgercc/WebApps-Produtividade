@@ -66,16 +66,19 @@ Uma aplicação web moderna e minimalista para escrever e organizar suas reflex�
 
 
 ## 🛠️ Estrutura do Projeto
-
 ```
 diario/
-├── index.html              # Interface principal
-├── server.js               # Servidor Express
-├── server-integration.js   # Integração do servidor
+├── index.html              # Interface principal da aplicação
+├── styles.css              # Estilos CSS da aplicação
+├── script.js               # Lógica JavaScript da aplicação
+├── server.js               # Servidor Express principal
+├── server-integration.js   # Integração do servidor com frontend
 ├── diary-data.json         # Arquivo de dados (criado automaticamente)
-├── package.json            # Dependências e scripts
+├── package.json            # Dependências e scripts npm
+├── package-lock.json       # Lock das dependências
 ├── start-diario.bat        # Script de inicialização (Windows)
-└── README.md               # Este arquivo
+├── node_modules/           # Dependências instaladas (criado automaticamente)
+└── README.md               # Documentação do projeto
 ```
 
 ## 🔧 Tecnologias Utilizadas
