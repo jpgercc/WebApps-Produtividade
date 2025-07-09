@@ -116,7 +116,10 @@ function showView(viewId) {
 
 // --- Entry Management ---
 
-const API_BASE = 'http://localhost:3001/api';
+// Detect environment and set API base URL
+const API_BASE = window.location.hostname === 'localhost' 
+    ? 'http://localhost:3001/api' 
+    : '/api';
 
 async function loadEntriesFromServer() {
     try {

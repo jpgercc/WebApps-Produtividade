@@ -5,11 +5,14 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "echo 'Build concluído - projeto estático pronto para Vercel'",
+    "vercel-build": "echo 'Vercel build concluído'"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "@vercel/kv": "^1.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
