@@ -308,6 +308,4 @@ Se você encontrar algum problema ou tiver sugestões:
 
 ---
 
-**Desenvolvido com ❤️ para escritores e pensadores**
-
-*Mantenha suas reflexões organizadas e acessíveis com esta ferramenta simples e poderosa.*
+*Mantenha suas tarefas organizadas e acessíveis com esta ferramenta simples e poderosa.*
