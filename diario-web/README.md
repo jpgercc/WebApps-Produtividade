@@ -1,6 +1,7 @@
 # 📖 Diário WebApp
 
 Uma aplicação web moderna e minimalista para escrever e organizar suas reflexões diárias. Desenvolvida com foco na simplicidade e experiência do usuário.
+<img width="1501" height="890" alt="Image" src="https://github.com/user-attachments/assets/32e015b1-ab19-42ca-9df1-8a7494d654d6" />
 
 ## ✨ Características
 
@@ -280,7 +281,5 @@ Se você encontrar algum problema ou tiver sugestões:
 3. Inclua informações do seu ambiente (OS, Node.js version, etc.)
 
 ---
-
-**Desenvolvido com ❤️ para escritores e pensadores**
 
 *Mantenha suas reflexões organizadas e acessíveis com esta ferramenta simples e poderosa.*
