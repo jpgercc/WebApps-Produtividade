@@ -1,4 +1,4 @@
 # 🚀 Meus WebApps de Produtividade
 
-* [✅ Lista de Tarefas WebApp](lista-tarefas/README.md)
-* [📖 Diário WebApp](diario/README.md)
+* [✅ Lista de Tarefas WebApp](lista-tarefas-web/README.md)
+* [📖 Diário WebApp](diario-web/README.md)
