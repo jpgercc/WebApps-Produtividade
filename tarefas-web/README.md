@@ -2,7 +2,7 @@
 
 Uma aplicação web moderna e eficiente para gerenciar suas tarefas diárias. Desenvolvida com foco na produtividade e simplicidade de uso.
 ![Image](https://github.com/user-attachments/assets/867fb30a-fbd3-4f74-9506-e06fe49330a4)
-*sim, estou usando Edge, eu tb não concordo com isso...
+*Sim, Edge 😢...
 
 ## ✨ Características
 
