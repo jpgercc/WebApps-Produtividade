@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1752155705050970dockwa",
+    "title": "Data Ex.",
+    "description": "",
+    "priority": "low",
+    "category": "study",
+    "dueDate": "",
+    "completed": false,
+    "createdAt": "2025-07-10T13:55:05.050Z",
+    "updatedAt": "2025-07-10T13:56:15.820Z"
+  },
+  {
+    "id": "1752158386931rqi75tf7f",
+    "title": "Agua p/ Plantas",
+    "description": "",
+    "priority": "high",
+    "category": "personal",
+    "dueDate": "2025-07-10",
+    "completed": false,
+    "createdAt": "2025-07-10T14:39:46.931Z",
+    "updatedAt": "2025-07-10T14:40:12.024Z"
+  }
+]
